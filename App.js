@@ -47,7 +47,7 @@ const App = () => {
             </View>
             <View style={styles.row}>
                 <Text style={styles.rowItem}>No of Characters</Text>
-                <Text style={styles.rowItem}>: {word.length}</Text>
+                <Text style={styles.rowItem}>: {word.split('').filter((e) => e !== ' ').length}</Text>
             </View>
         </View>
     );

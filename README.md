@@ -11,13 +11,13 @@ const vowels = ['a', 'e', 'i', 'o', 'u'];
 ```
 2. Calculate no of vowels
 ```
-word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
+let noOfVowels = word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
 ```
 2. Calculate no of consonants
 ```
-word.split('').filter((e) => e !== ' ').length - word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
+let noOfConsonants = word.split('').filter((e) => e !== ' ').length - noOfVowels;
 ```
 2. Calculate no of characters
 ```
-word.length;
+let noOfCharacters = word.length;
 ```
