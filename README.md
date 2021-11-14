@@ -15,7 +15,7 @@ word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
 ```
 2. Calculate no of consonants
 ```
-word.length - word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
+word.split('').filter((e) => e !== ' ').length - word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
 ```
 2. Calculate no of characters
 ```

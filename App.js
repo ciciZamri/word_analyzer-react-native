@@ -20,7 +20,7 @@ const App = () => {
 
     const analyze = () => {
         let v = word.toLowerCase().split('').filter((e) => vowels.includes(e)).length;
-        let c = word.length - v;
+        let c = word.split('').filter((e) => e !== ' ').length - v;
         setNoOfConsonants(c);
         setNoOfVowels(v);
     };
